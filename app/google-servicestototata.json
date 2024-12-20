@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "859235251008",
+    "project_id": "wizzit-c3162",
+    "storage_bucket": "wizzit-c3162.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859235251008:android:de5ed4ea4523ff3ef140a5",
+        "android_client_info": {
+          "package_name": "com.syca.wizzitessai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLCf-Trw44mClublajLdbDu7CdkbNOEXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

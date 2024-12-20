@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#434343">
+
+  <TextView
+    android:id="@+id/txtDisplay"
+    android:layout_width="344dp"
+    android:layout_height="69dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="88dp"
+    android:layout_marginEnd="20dp"
+    android:fontFamily="Arial, Helvetica, sans-serif;"
+    android:shadowColor="#81070707"
+    android:text="Enter Amount"
+    android:textAlignment="center"
+    android:textAllCaps="false"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:textColor="#FFFFFF"
+    android:textIsSelectable="false"
+    android:textSize="32sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.666"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/txtInput"
+    android:layout_width="342dp"
+    android:layout_height="79dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="16dp"
+    android:fontFamily="Arial, Helvetica, sans-serif;"
+    android:hint="0"
+    android:textAlignment="center"
+    android:textColor="#FFFFFF"
+    android:textColorHint="#AAA"
+    android:textSize="32sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.486"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtDisplay" />
+
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar4"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:title="Wizzit EMV SDK Example App"
+    app:titleTextColor="#FFFFFF" />
+
+  <TableLayout
+    android:layout_width="411dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/txtInput"
+    app:layout_constraintVertical_bias="0.384">
+
+    <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="2"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btn3"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="3"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <Button
+        android:id="@+id/btn4"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="4"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btn5"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="5"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btn6"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="6"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <Button
+        android:id="@+id/btn7"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="7"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btn8"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btn9"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="9"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+      <Button
+        android:id="@+id/btnClear"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#F44336"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="clearAmount"
+        android:text="←"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btn0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#AAA"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="addAmount"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+      <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#4CAF50"
+        android:foregroundTint="#FFFFFF"
+        android:onClick="invokeEMV"
+        android:text="→"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+    </TableRow>
+  </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

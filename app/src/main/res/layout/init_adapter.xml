@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/init_adapter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      app:popupTheme="@style/AppTheme.PopupOverlay"
+      app:title="Wizzit EMV SDK Example App"
+      app:titleTextColor="#FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_Initalizing"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="127dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="242dp"
+        android:clickable="false"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:foregroundGravity="top|left|bottom|center_vertical|right|center_horizontal"
+        android:indeterminate="true"
+        android:indeterminateDuration="10000"
+        android:indeterminateTint="@color/colorAccent"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219" />
+
+    <TextView
+        android:id="@+id/txtInitializing"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal"
+        android:text="@string/please_wait_initializing"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar_Initalizing"
+        app:layout_constraintStart_toStartOf="@+id/progressBar_Initalizing"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar_Initalizing" />
+</androidx.constraintlayout.widget.ConstraintLayout>

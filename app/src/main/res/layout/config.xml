@@ -1,0 +1,339 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  app:layout_constraintBottom_toBottomOf="parent"
+  app:layout_constraintEnd_toEndOf="parent"
+  app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintTop_toTopOf="parent">
+
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:title="Wizzit EMV SDK Example App"
+    app:titleTextColor="#FFFFFF" />
+
+  <TableLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp"
+      android:layout_marginTop="12dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Test Server URL"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/txtServerUrl"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".67"
+        android:background="#9E9E9E"
+        android:saveEnabled="false"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Country Code"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/txtOTP"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".67"
+        android:background="#9E9E9E"
+        android:saveEnabled="false"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Currency Code"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/txtCurrency"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".67"
+        android:background="#9E9E9E"
+        android:saveEnabled="false"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Reader Limit"
+        android:textSize="14sp" />
+
+      <EditText
+        android:id="@+id/txtReaderLimit"
+        style="@style/Widget.AppCompat.EditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".67"
+        android:background="#9E9E9E"
+        android:saveEnabled="false"
+        android:singleLine="true"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Pin Enabled"
+        android:textSize="14sp" />
+
+      <Spinner
+        android:id="@+id/spinPinCapability"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:layout_weight=".67"
+        android:padding="0dp"
+        android:textSize="12sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Signature Enabled"
+        android:textSize="14sp" />
+
+      <Spinner
+        android:id="@+id/spinSigCapability"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".67"
+        android:textSize="12sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Transaction Type"
+        android:textSize="14sp" />
+
+      <Spinner
+        android:id="@+id/spinTransactionType"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".67"
+        android:textSize="12sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="Mastercard Profile"
+        android:textSize="14sp" />
+
+      <Spinner
+        android:id="@+id/spinMastercardProfile"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".67"
+        android:textSize="12sp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="83dp"
+      android:layout_margin="3dp"
+      android:layout_marginTop="6dp">
+
+      <TextView
+        android:id="@+id/kernelChecksums"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Kernel Checksums:"
+        android:textSize="14dp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:singleLine="false"
+        android:text="Visa\nwizzitEmvSdkVisa version 1.0.6 \n0119478daac75646b2a385e64063630b20b0a71d39c8bdb928777f6305ab2ba92"
+        android:textSize="14dp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp">
+
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:singleLine="false"
+        android:text="Mastercard\nwizzitEmvSdkMastercard version 1.0.0 \n10e7b4a5f73240336ae7dc7a722c87eda799fd89b755e9b21693d80fc018aab7"
+        android:textSize="14dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp">
+
+      <TextView
+          android:id="@+id/txtSdkVersion"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="left"
+          android:layout_weight="0"
+          android:gravity="left"
+          android:singleLine="false"
+          android:text="SDK"
+          android:textSize="14dp" />
+
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp"
+      android:layout_marginTop="6dp"
+      android:gravity="center_horizontal">
+
+      <Button
+        android:id="@+id/btnSaveConfiguration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_weight="1"
+        android:onClick="saveConfiguration"
+        android:text="Save Configuration"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp"
+      android:layout_marginTop="6dp"
+      android:gravity="center_horizontal">
+
+      <Button
+          android:id="@+id/btnDoTransaction"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="6dp"
+          android:layout_weight="1"
+          android:onClick="doTransaction"
+          android:text="Do Transaction"
+          android:textAlignment="center"
+          android:textSize="18sp" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_margin="3dp"
+      android:layout_marginTop="6dp"
+      android:gravity="center_horizontal"/>
+
+  </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/tx_result"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar3"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:layout_constraintTop_toTopOf="parent"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:title="Wizzit EMV SDK Example App"
+    app:titleTextColor="#FFFFFF"
+    tools:layout_editor_absoluteX="0dp" />
+
+  <Button
+    android:id="@+id/buttonContinue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="continueClicked"
+    android:text="Continue"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+    app:layout_constraintVertical_bias="0.279" />
+
+  <TextView
+    android:id="@+id/textViewReason"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="Reason"
+    android:textAlignment="center"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewSuccess" />
+
+  <TextView
+    android:id="@+id/textViewSuccess"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="36dp"
+    android:text="Transaction Successful"
+    android:textAlignment="center"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewSuccess3" />
+
+  <TextView
+    android:id="@+id/textViewSuccess3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:text="Customer Slip"
+    android:textAlignment="center"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.501"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewSuccess2" />
+
+  <TextView
+    android:id="@+id/textViewSuccess2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="64dp"
+    android:text="WIZZITpay"
+    android:textAlignment="center"
+    android:textSize="32sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/toolbar3" />
+
+  <TableLayout
+    android:id="@+id/tableLayout"
+    android:layout_width="271dp"
+    android:layout_height="121dp"
+    android:layout_marginTop="44dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewReason">
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp">
+
+      <TextView
+        android:id="@+id/textViewLabel1b"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+      <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textStyle="bold"
+        tools:visibility="visible" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp">
+
+      <TextView
+        android:id="@+id/textViewLabel1a"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="Ref"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+      <TextView
+        android:id="@+id/textViewReference"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="Reference"
+        android:textStyle="bold"
+        tools:visibility="visible" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp">
+
+      <TextView
+        android:id="@+id/textViewLabel1c"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="Auth"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+      <TextView
+        android:id="@+id/textViewAuth"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="Auth"
+        android:textStyle="bold"
+        tools:visibility="visible" />
+    </TableRow>
+
+    <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="10dp">
+
+      <TextView
+        android:id="@+id/textViewLabel1d"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:text="Total"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+      <TextView
+        android:id="@+id/textViewAmount"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textStyle="bold"
+        tools:visibility="visible" />
+    </TableRow>
+
+  </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

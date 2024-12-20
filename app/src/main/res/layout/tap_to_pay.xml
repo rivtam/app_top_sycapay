@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tap_to_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar3"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      app:popupTheme="@style/AppTheme.PopupOverlay"
+      app:title="Wizzit EMV SDK Example App"
+      app:titleTextColor="#FFFFFF" />
+
+    <TextView
+      android:id="@+id/textViewTimeoutSeconds"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="30"
+      android:textSize="36sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewTapToPay"
+      app:layout_constraintVertical_bias="0.051" />
+
+    <TextView
+      android:id="@+id/textViewSecondsLeft"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="seconds left"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewTimeoutSeconds"
+      app:layout_constraintVertical_bias="0.062" />
+
+    <TextView
+      android:id="@+id/textViewCardProcessingNotify"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:textSize="20sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.496"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewSecondsLeft"
+      app:layout_constraintVertical_bias="0.080" />
+
+    <TextView
+      android:id="@+id/textView9"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Transaction Ref."
+      android:textAlignment="viewStart"
+      android:textSize="18sp"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+      app:layout_constraintVertical_bias="0.052" />
+
+    <TextView
+      android:id="@+id/textViewAmount"
+      android:layout_width="wrap_content"
+      android:layout_height="24dp"
+      android:layout_marginTop="9dp"
+      android:text="Amount"
+      android:textAlignment="center"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView11"
+      app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+      android:id="@+id/textViewTransactionRef"
+      android:layout_width="wrap_content"
+      android:layout_height="25dp"
+      android:layout_marginTop="15dp"
+      android:text="Transaction Ref."
+      android:textAlignment="center"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView9"
+      app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+      android:id="@+id/textView11"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="9dp"
+      android:text="Amount"
+      android:textAlignment="viewStart"
+      android:textSize="18sp"
+      app:autoSizeTextType="uniform"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewTransactionRef"
+      app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+      android:id="@+id/textViewTapToPay"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="17dp"
+      android:text="Tap Card To Pay"
+      android:textSize="24sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.497"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewAmount"
+      app:layout_constraintVertical_bias="0.066" />
+
+    <Button
+      android:id="@+id/buttonCancel"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Cancel"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textViewCardProcessingNotify"
+      app:layout_constraintVertical_bias="0.284" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
